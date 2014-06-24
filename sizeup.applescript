@@ -55,7 +55,6 @@ repeat with targetApp in sizes
     end if
 
     tell application appName
-        activate
         set bounds of window 1 to appSize
     end tell
 end repeat
