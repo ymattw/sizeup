@@ -52,6 +52,8 @@ repeat with targetApp in sizes
         set appSize to |1440| of targetApp
     else if screenWidth >= 1024 then
         set appSize to |1024| of targetApp
+    else
+        set appSize to |1024| of targetApp
     end if
 
     tell application appName
