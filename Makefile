@@ -1,4 +1,4 @@
-.PHONY: build install run clean
+.PHONY: build install run clean sizeup.app
 
 build: sizeup.app
 
@@ -8,8 +8,8 @@ sizeup.app: sizeup.applescript
 install: sizeup.app
 	cp -R sizeup.app /Applications
 
-run:
-	./sizeup.applescript
+run: sizeup.app
+	open $<
 
 clean:
 	rm -rf sizeup.app
